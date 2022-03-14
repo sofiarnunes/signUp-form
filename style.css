@@ -92,9 +92,15 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
+  position: relative;
 }
 
-.form form input {
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.form form .input-container input {
   display: block;
   width: 80%;
   padding: 15px;
@@ -104,6 +110,32 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background-color: transparent;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img[alt="error-icon"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+}
+
+.error-msg {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--red);
+  font-weight: var(--x-normal);
+  position: absolute;
+  top: 85%;
+  right: 7%;
+}
+
+.error-input {
+  border: 2px solid var(--red) !important;
+  color: var(--red);
+  font-weight: var(--bold);
 }
 
 .form form input:focus {
@@ -160,12 +192,52 @@ body {
   color: var(--blue);
 }
 
+.error-fn {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--red);
+  font-weight: var(--x-normal);
+  position: absolute;
+  top: 16%;
+  right: 7%;
+}
+
+.error-ln {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--red);
+  font-weight: var(--x-normal);
+  position: absolute;
+  top: 32%;
+  right: 7%;
+}
+
+.error-email {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--red);
+  font-weight: var(--x-normal);
+  position: absolute;
+  top: 48%;
+  right: 7%;
+}
+
+.error-pwd {
+  font-size: 10px;
+  font-style: italic;
+  color: var(--red);
+  font-weight: var(--x-normal);
+  position: absolute;
+  top: 64%;
+  right: 7%;
+}
+
 @media only screen and (max-width: 950px) {
   .container {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90%;
+    height: 140%;
   }
 
   .form-title {

@@ -24,11 +24,39 @@
     <div class="form">
       <button class="free-trial"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
       <form action="">
-        <input type="text" id="first-name" name="first-name" placeholder="First Name"/>
-        <input type="text" id="last-name" name="last-name" placeholder="Last Name"/>
-        <input type="email" id="email" name="email" placeholder="Email Address"/>
-        <input type="password" id="password" name="password" placeholder="Password"/>
-        <button type="submit">Claim your free trial</button>
+        <div class="input-container">
+          <input type="text" name="first-name" placeholder="First Name" id='first-name'/>
+          <div id="error-fn">
+            <img src="./images/icon-error.svg" alt="error-icon">
+            <p class="error-msg" >First Name cannot be empty</p>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input type="text" name="last-name" placeholder="Last Name" id='last-name'/>
+          <div id="error-ln">
+            <img src="./images/icon-error.svg" alt="error-icon">
+            <p class="error-msg">Last Name cannot be empty</p>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input type="email" name="email" placeholder="Email Address" id='email'/>
+          <div id="error-email">
+            <img src="./images/icon-error.svg" alt="error-icon">
+            <p class="error-msg">Looks like this is not an email</p>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input type="password" name="password" placeholder="Password" id='password'/>
+          <div id="error-pwd">
+            <img src="./images/icon-error.svg" alt="error-icon">
+            <p class="error-msg">Password cannot be empty</p>
+          </div>
+        </div>
+
+        <button type="submit" id="submit">Claim your free trial</button>
         <p class="disclaimer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
     </div>
@@ -39,5 +67,6 @@
       Coded by <a href="https://www.linkedin.com/in/sofia-nunes-21a75120a/" target="_blank">Sofia Nunes</a>.
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
