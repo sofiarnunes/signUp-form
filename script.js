@@ -1,3 +1,4 @@
+// Variables
 const firstName = document.getElementById('first-name');
 const errorFN = document.getElementById('error-fn');
 const lastName = document.getElementById('last-name');
@@ -8,10 +9,16 @@ const pwd = document.getElementById('password');
 const errorPwd = document.getElementById('error-pwd');
 const submit = document.getElementById('submit');
 
+
+// Errors hidden
+
 errorFN.hidden = true;
 errorLN.hidden = true;
 errorEmail.hidden = true;
 errorPwd.hidden = true;
+
+
+// Form submition validation
 
 submit.addEventListener('click', function(e) {
     e.preventDefault();
