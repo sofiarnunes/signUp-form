@@ -63,7 +63,7 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: all 0.1s linear;
 }
@@ -163,8 +163,9 @@ body {
 @media only screen and (max-width: 950px) {
   .container {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 90%;
   }
 
   .form-title {
